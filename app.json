@@ -56,7 +56,7 @@
 
       "STRING_SESSION": {
          "description": "Fill Telethon String Session Get From t.me/JaiHindChatting .",
-         "required": false,
+         "required": true,
          "value": "" 
       },
       "HEROKU_API_KEY": {
