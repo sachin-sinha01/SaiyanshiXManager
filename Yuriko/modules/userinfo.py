@@ -291,7 +291,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\nAppeal at @jaiHindChatting"
     except:
         pass  # don't crash if api is down somehow...
 
@@ -315,7 +315,7 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Soldier'."
         disaster_level_present = True
-    elif user.id == 1829047705:
+    elif user.id == 2023126723:
          text += "\n\nOwner Of A Bot. Queen Of @excrybaby. Bot Name Inspired From 'JoJo'."
          disaster_level_present = True
 
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/Rymofficial"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/JaiHindChatting")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/Rymofficial"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/JaiHindChatting")
                         ],
                     ]
                 ),
@@ -447,7 +447,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update: Update, context: CallbackContext):
     stats = "<b>╔═━「 Current 𝗧𝗿𝗶𝘀𝗵𝗮 Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n╘═━ [Support](t.me/JaiHindChatting) [Updates](t.me/RymOfficial)"
+    result += "\n╘═━ [Support](https://t.me/JaiHindChatting) [Updates](https://t.me/RymOfficial)"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
@@ -552,7 +552,7 @@ __help__ = """
 
 Examples:
 
-✗ /setme - `I am a` *DᴇCᴏᴅᴇ* `Member.`
+✗ /setme - `I am a` *TRISHA* `Member.`
 
 ✗ /me - `@username(defaults to yours if no user specified)`
  
@@ -566,7 +566,7 @@ Examples:
 
 ✗ /bio - `@username(defaults to yours if not specified).`
 
-✗ /setbio - `This user is a` *DᴇCᴏᴅᴇ* `Member (reply to the user)`
+✗ /setbio - `This user is a` *Trisha* `Member (reply to the user)`
  
 *Overall Information about you:*
 
@@ -586,7 +586,7 @@ Examples:
 
 *What is that health thingy?*
 
- `Come and see` [HP System explained](https://t.me/YurikoLogs/2)
+ `Come and see` [HP System explained](https://t.me/JaiHindChatting)
 
 *✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
 """
