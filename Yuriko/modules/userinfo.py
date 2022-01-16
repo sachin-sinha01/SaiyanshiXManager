@@ -447,9 +447,19 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update: Update, context: CallbackContext):
     stats = "<b>╔═━「 Current 𝗧𝗿𝗶𝘀𝗵𝗮 Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n╘═━ [Support](https://t.me/JaiHindChatting) [Updates](https://t.me/RymOfficial)"
+    result += "\n╘═━ [Support](@JaiHindChatting) [Updates](@RymOfficial)"
     update.effective_message.reply_text(
         result,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/Rymofficial"),
+                    InlineKeyboardButton(
+                        "𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/JaiHindChatting")
+                ],
+            ]
+        ),
         parse_mode=ParseMode.HTML, 
         disable_web_page_preview=True
    )
