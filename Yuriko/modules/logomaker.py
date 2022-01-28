@@ -196,7 +196,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥](https://t.me/JaiHindChatting)",
+            caption="Logo by Lost Boy](https://t.me/abouut_me)",
             force_document=False,
         )
         os.remove(flnme)
@@ -220,5 +220,5 @@ __help__ = """
 
 ✗  /edit - `<reply photo> to edit image.`
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ Powered 💕 By: Mastermind Network(MNO) @mastermind_network_official !*
 """
