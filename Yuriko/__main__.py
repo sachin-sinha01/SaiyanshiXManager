@@ -127,7 +127,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @JaiHindChatting 💕"""
+ @mr_lost01 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -391,10 +391,10 @@ def yurikorobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐁𝐮𝐠'𝐬", url="t.me/JaiHindChatting"
+                            text="𝐁𝐮𝐠'𝐬", url="t.me/mr_lost01"
                         ),
                         InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/RymOfficial"
+                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/mastermind_network_official"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")],
