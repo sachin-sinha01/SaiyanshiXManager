@@ -487,7 +487,7 @@ Note:
 
 ✗ *<sticker link> can be* `https://t.me/addstickers/<sticker>` *or just* `<sticker>` *or reply to the sticker message*
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ Powered 💕 By: Mastermind Network(MNO) @mastermind_network_official !*
 """
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
     "blacklist",
