@@ -203,7 +203,7 @@ if is_module_loaded(FILENAME):
 ➩ `sending /setlog in the channel`
 ➩ `forwarding the /setlog to the group`
 
-*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+*✗ Powered 💕 By: Mastermind Network(MNO) @mastermind_network_official !*
 """
 
     __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
