@@ -111,7 +111,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐀𝐝𝐝 Saiyanshi✘ 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/@saiyanshi_tobot?startgroup=true"),
+        InlineKeyboardButton(text="𝐀𝐝𝐝 Saiyanshi✘ 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/saiyanshi_tobot?startgroup=true"),
     ],
 ]
 
