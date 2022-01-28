@@ -90,7 +90,7 @@ PM_START_TEXT = """
 × *𝐔𝐩𝐓𝐢𝐦𝐞:* `{}`
 × `{}` *𝐔𝐬𝐞𝐫, 𝐀𝐜𝐫𝐨𝐬𝐬* `{}` *𝐂𝐡𝐚𝐭𝐬.*
 ────────────────────────
-✗ *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥 @JaiHindChatting !*
+✗ *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: ★彡ᴍɴᴏ[ʟᴏꜱᴛ༒ʙᴏʏ] 彡★ @Friend_warrior !*
 """
 
 buttons = [
@@ -101,7 +101,7 @@ buttons = [
     [
         InlineKeyboardButton(text="𝐌𝐮𝐬𝐢𝐜", callback_data="yurikorobot_asst"),
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/JaiHindChatting"
+            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/friend_warrior"
         ),
     ],
     [
@@ -111,7 +111,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐀𝐝𝐝 𝐓𝐫𝐢𝐬𝐡𝐚 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/DevilTrishaRoBot?startgroup=true"),
+        InlineKeyboardButton(text="𝐀𝐝𝐝 Saiyanshi✘ 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/@saiyanshi_tobot?startgroup=true"),
     ],
 ]
 
