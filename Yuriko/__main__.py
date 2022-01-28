@@ -82,36 +82,36 @@ def get_readable_time(seconds: int) -> str:
 yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-*👋 𝐇𝐞𝐥𝐥𝐨 {} !*
+*👋 Hello {} !*
 
-✗ *𝐈'𝐀𝐦 𝐀𝐧 𝐀𝐧𝐢𝐦𝐞-𝐓𝐡𝐞𝐦𝐞 𝐌𝐚𝐧𝐚𝐠𝐦𝐞𝐧𝐭 𝐁𝐨𝐭*
-✗ *𝐀𝐦 𝐕𝐞𝐫𝐲 𝐅𝐚𝐬𝐭 𝐀𝐧𝐝 𝐌𝐨𝐫𝐞 𝐄𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭  𝐈 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐀𝐰𝐞𝐬𝐨𝐦𝐞  𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬!*
+✗ *I'm An Anime Themed Management Bot*
+✗ *Am Very Fast And More Efficient I provide Awesome Features!*
 ────────────────────────
-× *𝐔𝐩𝐓𝐢𝐦𝐞:* `{}`
-× `{}` *𝐔𝐬𝐞𝐫, 𝐀𝐜𝐫𝐨𝐬𝐬* `{}` *𝐂𝐡𝐚𝐭𝐬.*
+× *UpTime:* `{}`
+× `{}` *User, Across* `{}` *Chats.*
 ────────────────────────
-✗ *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: ★彡ᴍɴᴏ[ʟᴏꜱᴛ༒ʙᴏʏ] 彡★ @Friend_warrior !*
+✗ *Powered 💕 By: ★彡ᴍɴᴏ[ʟᴏꜱᴛ༒ʙᴏʏ] 彡★ @Friend_warrior !*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="help_back"),
+            text="Help & Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="𝐌𝐮𝐬𝐢𝐜", callback_data="yurikorobot_asst"),
+        InlineKeyboardButton(text="Music", callback_data="yurikorobot_asst"),
         InlineKeyboardButton(
-            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/friend_warrior"
+            text="Support", url=f"https://t.me/friend_warrior"
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐀𝐛𝐨𝐮𝐭", callback_data="yurikorobot_"),
+        InlineKeyboardButton(text="About", callback_data="yurikorobot_"),
         InlineKeyboardButton(
-            text="𝐁𝐚𝐬𝐢𝐜 𝐇𝐞𝐥𝐩", callback_data="yurikorobot_basichelp"
+            text="Basic Help", callback_data="yurikorobot_basichelp"
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐀𝐝𝐝 Saiyanshi✘ 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩", url="http://t.me/saiyanshi_tobot?startgroup=true"),
+        InlineKeyboardButton(text="Add Saiyanshi✘ In Group", url="http://t.me/saiyanshi_tobot?startgroup=true"),
     ],
 ]
 
@@ -248,7 +248,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/mastermind_network_official")]]
+                [[InlineKeyboardButton(text="Source & Support", url="t.me/mastermind_network_official")]]
             ),
         )
         
@@ -381,7 +381,7 @@ def yurikorobot_about_callback(update, context):
     if query.data == "yurikorobot_":
         query.message.edit_text(
             text=""" *Saiyanshi✘* - `A bot to manage your groups with additional features!`
-            \n`Here the basic help regarding use of Saiyanshi✘𝐑𝐨𝐛𝐨𝐭.`
+            \n`Here the basic help regarding use of Saiyanshi✘`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
             \n`Report error/bugs click the Button`""",
@@ -391,10 +391,10 @@ def yurikorobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐁𝐮𝐠'𝐬", url="t.me/mr_lost01"
+                            text="Bug'𝐬", url="t.me/mr_lost01"
                         ),
                         InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/mastermind_network_official"
+                            text="Channel", url="https://t.me/mastermind_network_official"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")],
@@ -421,7 +421,7 @@ def yurikorobot_about_callback(update, context):
             
             f"\n\n✗ `Firstly Add` {dispatcher.bot.first_name} `to your group by pressing` [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n✗ `After adding promote me manually with full rights for faster experience.`\n"
-            f"\n✗ `Than send` `/admincache@DevilTrishaRoBot` `in that chat to refresh admin list in My database.`\n"
+            f"\n✗ `Than send` `/admincache@saiyanshi_tobot` `in that chat to refresh admin list in My database.`\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -447,7 +447,7 @@ def yurikorobot_about_callback(update, context):
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n✗ `Congragulations, 𝐓𝐫𝐢𝐬𝐡𝐚𝐑𝐨𝐛𝐨𝐭 now ready to manage your group.`"
+            f"\n✗ `Congragulations, SaiyanshiX now ready to manage your group.`"
             f"\n\n*Admin Tools*"
             f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
             f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
@@ -475,15 +475,15 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_asst":
         query.message.edit_text(
-            text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「𝐌𝐮𝐬𝐢𝐜」 Mᴏᴅᴜʟᴇ:*"
+            text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Music」 Mᴏᴅᴜʟᴇ:*"
             
-            f"\n*𝐒𝐄𝐓𝐔𝐏 𝐌𝐔𝐒𝐈𝐂*"
+            f"\n*SETUP MUSIC*"
             f"\n\n✗ `1.) first, add me to your group.`"
             f"\n\n✗ `2.) then promote me as admin and give all permissions except anonymous admin.`"
             f"\n\n✗ `3.) Assistant Auto Join to your group:`"
             f"\n\n✗ `4.) turn on the video chat first before start to play music.`"
-            f"\n\n✗ *Lets Enjoy The 𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐮𝐬𝐢𝐜 And Join Support Group @JaiHindChatting*"
-            f"\n\n*✗ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 💕 𝐁𝐲: 𝗗𝗲𝘃𝗶𝗟 𝗛𝗮𝗰𝗸𝗲𝗥*",
+            f"\n\n✗ *Lets Enjoy The SaiayanhiX Music And Join Support Group @Friend_warrior"
+            f"\n\n*✗ Powered 💕By: @mastermind_network_official",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -494,7 +494,7 @@ def yurikorobot_about_callback(update, context):
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n✗ `Congragulations, 𝐓𝐫𝐢𝐬𝐡𝐚𝐑𝐨𝐛𝐨𝐭 now ready to manage your group.`"
+            f"\n✗ `Congragulations, SaiyanshiX now ready to manage your group.`"
             f"\n\n*Admin Tools*"
             f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
             f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
@@ -509,18 +509,18 @@ def yurikorobot_about_callback(update, context):
         )    
     elif query.data == "yurikorobot_support":
         query.message.edit_text(
-            text="*𝐓𝐫𝐢𝐬𝐡𝐚 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐭𝐬*"
+            text="*SaiyanshiX Chat Support*"
             
             "\n\n✗ `Join Support Group/Channel`",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐧𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/JaiHindChatting"),
+                    InlineKeyboardButton(text="Source and Support", url="t.me/mastermind_network_Official"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝐋𝐨𝐠𝐬", url="t.me/THEDRAGONV6"),
-                    InlineKeyboardButton(text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url="https://t.me/RymOfficial"),
+                    InlineKeyboardButton(text="Logs", url="https://t.me/saiyanshi_x_logs"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/mastermind_network_Official"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
@@ -531,14 +531,14 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR 𝐓𝐑𝐈𝐒𝐇𝐀 DEV'S</b>\n"
+            text=f"<b> CREDIT FOR SAIYANSHIX DEV'S</b>\n"
             
-            f"\n`✗ Here Some Developers Helping in Making The 𝐓𝐫𝐢𝐬𝐡𝐚 Bot`",
+            f"\n`✗ Here Some Developers Helping in Making The SaiyanshiX Bot`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝗟𝗲𝗴𝗲𝗻𝗱 𝗥𝗮𝗷", url="t.me/LegendRajOp"),
+                    InlineKeyboardButton(text="Lost Boy", url="https://t.me/abouut_me"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
@@ -554,8 +554,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *𝗧𝗿𝗶𝘀𝗵𝗮𝗥𝗼𝗯𝗼𝘁*
-                 \nHere is the [🔥Source Code🔥](https://github.com/rakeshyt) .""",
+            text=""" Hi..😻 I'm Saiyanshi✘
+                 \nHere is the [🔥Source Code🔥](https://github.com) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
